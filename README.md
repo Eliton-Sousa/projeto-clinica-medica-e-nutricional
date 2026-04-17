@@ -1,10 +1,10 @@
-# 🏥 Sistema Web - Clínica Médica e Nutricional
+# Sistema Web - Clínica Médica e Nutricional
 
 Aplicação web desenvolvida para apresentação e organização de uma clínica integrada, reunindo serviços médicos e nutricionais em uma única plataforma.
 
 ---
 
-## 📌 Descrição
+##  Descrição
 
 Este projeto consiste em uma página web institucional que simula o funcionamento de uma clínica médica e nutricional, com foco em usabilidade, organização de informações e experiência do usuário.
 
@@ -12,15 +12,15 @@ A aplicação apresenta os principais serviços oferecidos, equipe profissional 
 
 ---
 
-## 🌐 Acesso ao sistema
+##  Acesso ao sistema
 
 A aplicação está disponível online:
 
-🔗 https://eliton-sousa.github.io/projeto-clinica-medica-e-nutricional/
+ https://eliton-sousa.github.io/projeto-clinica-medica-e-nutricional/
 
 ---
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
 * Apresentação institucional da clínica
 * Listagem de serviços médicos e nutricionais
@@ -30,7 +30,7 @@ A aplicação está disponível online:
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+##  Tecnologias utilizadas
 
 * HTML5
 * CSS3
@@ -38,7 +38,7 @@ A aplicação está disponível online:
 
 ---
 
-## 🎨 Layout e Design
+##  Layout e Design
 
 O sistema foi desenvolvido com foco em:
 
@@ -49,7 +49,7 @@ O sistema foi desenvolvido com foco em:
 
 ---
 
-## 📂 Estrutura do projeto
+##  Estrutura do projeto
 
 ```bash
 projeto-clinica-medica-e-nutricional/
@@ -66,7 +66,7 @@ projeto-clinica-medica-e-nutricional/
 
 ---
 
-## ⚙️ Como executar o projeto localmente
+##  Como executar o projeto localmente
 
 ```bash
 # Clone o repositório
@@ -80,7 +80,7 @@ cd projeto-clinica-medica-e-nutricional
 
 ---
 
-## 📱 Responsividade
+##  Responsividade
 
 A aplicação foi projetada para funcionar em:
 
@@ -90,7 +90,7 @@ A aplicação foi projetada para funcionar em:
 
 ---
 
-## 📈 Possíveis melhorias futuras
+##  Possíveis melhorias futuras
 
 * Integração com backend (Java, Node.js ou PHP)
 * Sistema de agendamento online
@@ -100,13 +100,13 @@ A aplicação foi projetada para funcionar em:
 
 ---
 
-## 👨‍💻 Autor
+##  Autor
 
 Desenvolvido por **Eliton Sousa**
 
 ---
 
-## 📄 Licença
+##  Licença
 
 Este projeto está sob a licença MIT.
 
