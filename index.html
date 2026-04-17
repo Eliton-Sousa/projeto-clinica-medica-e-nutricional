@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+  <title>Viver com Saúde</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #2d5536; color: white; padding: 30px; display: flex; align-items: center; }
+    header img { margin-right: 20px; max-width: 160px; }
+    header .content { flex: 1; text-align: center; }
+    header nav { margin-top: 10px; display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
+    header nav a { background: white; color: #2d5536; padding: 10px 18px; border-radius: 25px; text-decoration: none; font-weight: bold; transition: background .2s ease; }
+    header nav a:hover { background: #e1f0df; }
+    section { padding: 40px; }
+    h2 { color: #2d5536; margin-bottom: 20px; }
+    .servicos img, .equipe img { width: 200px; height: 200px; object-fit: cover; border-radius: 10px; margin: 10px; }
+    .servicos, .equipe { display: flex; justify-content: space-around; flex-wrap: wrap; align-items: flex-start; }
+    .servicos > div { display: flex; flex-direction: column; align-items: center; text-align: center; max-width: 250px; }
+    .membro { text-align: center; margin: 20px; position: relative; }
+    .membro .resumo { display: none; position: absolute; bottom: 100%; left: 50%; transform: translateX(-50%); background: rgba(0,0,0,0.8); color: white; padding: 10px; border-radius: 5px; white-space: nowrap; font-size: 14px; z-index: 10; }
+    .membro:hover .resumo { display: block; }
+    .contato { padding: 05px 0; }
+    .contato h2 { text-align: left; margin-left: 0; }
+    .contato-body { display: flex; align-items: flex-start; justify-content: center; gap: 16px; }
+    .whatsapp-fixo { position: static; width: 170px; height: auto; cursor: pointer; }
+    .whatsapp-fixo:hover { opacity: 0.9; }
+    .contato form { width: 420px; max-width: 100%; margin: 0; display: flex; flex-direction: column; }
+    form input { margin: 10px 0; padding: 10px; }
+    form button { background: #2d5536; color: white; padding: 10px; border: none; cursor: pointer; }
+    footer { background: #2d5536; color: white; text-align: center; padding: 15px; }
+    .video-container { width: 100%; max-width: 100%; margin: 0; padding: 0; overflow: hidden; }
+    .video-container video, .video-container iframe { width: 100%; height: 100vh; display: block; }
+    @media (max-width: 768px) {
+      .servicos, .equipe {
+        flex-direction: column;
+        align-items: center;
+      }
+      .servicos img, .equipe img {
+        width: 100%;
+        max-width: 300px;
+        height: 300px;
+        object-fit: cover;
+      }
+      form {
+        width: 90%;
+      }
+      .contato {
+        flex-direction: column;
+        align-items: center;
+      }
+      .whatsapp-fixo {
+        width: 170px;
+        margin-top: 20px;
+      }
+    }
+    </style>
+  <script src="script.js/script.js"></script>
+</head>
+<body id="top">
+  <header>
+    <img src="imagens/logotransp3.png" alt="logo" loading="lazy">
+    <div class="content">
+      <h1>Viver com Saúde</h1>
+      <h4><em>Uma vida Saudável começa com pequenas atitudes</em></h4>
+      <p>Atendimento médico especializado e nutricional para sua saúde e bem-estar</p>
+      <nav>
+        <a href="#" onclick="mostrarQuemSomos(); return false;">Quem Somos</a>
+        <a href="#" onclick="abrirLocalizacao(); return false;">Localização</a>
+        <a href="#" onclick="atendimentoOnline(); return false;">Atendimento online</a>
+        <a href="#" onclick="mostrarConvenios(); return false;">Convênios</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="video-container">
+    <video controls autoplay muted loop>
+      <source src="videos/video.mp4" type="video/mp4">
+      Seu navegador não suporta a tag de vídeo.
+    </video>
+  </section>
+
+  <section>
+    <h2>Nossos Serviços</h2>
+    <div class="servicos">
+      <div>
+        <img src="imagens/imagem_medica.jpeg" alt="Consulta médica" loading="lazy">
+        <p>Consultas médicas especializadas para prevenção e tratamento de doenças.</p>
+      </div>
+      <div>
+        <img src="imagens/nutri2.jpg" alt="Consulta nutricional" loading="lazy">
+        <p>Acompanhamento nutricional personalizado para uma vida equilibrada e saudável.</p>
+      </div>
+      <div>
+        <img src="imagens/lab.webp" alt="Exames laboratoriais" loading="lazy">
+        <p>Exames laboratoriais para diagnose e acompanhamento a sua saúde.</p>
+      </div>
+      <div>
+        <img src="imagens/clinc.imagem.avif" alt="Exames de imagens" loading="lazy">
+        <p>Exames de imagem para avaliações detalhadas e auxiliar no diagnóstico preciso.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Nossa Equipe</h2>
+    <div class="equipe">
+      <div class="membro">
+        <img src="imagens/medico_cg.png" alt="Dr. João Silva" loading="lazy">
+        <div class="resumo">Médico Clínico Geral com experiência em atendimento clínico, prevenção de doenças.</div>
+        <p><strong>Drº. Marcos Bortoletto</strong><br>Médico Clínico Geral</p>
+      </div>
+      <div class="membro">
+        <img src="imagens/Joao.png" alt="Dr. Joao Gabriel" loading="lazy">
+        <div class="resumo">Nutricionista especializado em dietas personalizadas e promoção de hábitos saudáveis.</div>
+        <p><strong>Drº. João Gabriel Araújo</strong><br>Nutricionista</p>
+      </div>
+      <div class="membro">
+        <img src="imagens/anabeatriz.png" alt="Drº. Ana Beartriz" loading="lazy">
+        <div class="resumo">Cardiologista dedicada ao cuidado do coração e prevenção de doenças cardiovasculares.</div>
+        <p><strong>Drª. Ana Beatriz Teixeira</strong><br>Cardiologista</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contato">
+    <h2>Entre em Contato</h2>
+    <div class="contato-body">
+      <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="text" placeholder="Cidade" required>
+        <input type="text" placeholder="Estado" required>
+        <button type="submit">Enviar</button>
+      </form>
+      <img src="imagens/Wppatendimento.png" alt="Whatsapp" class="whatsapp-fixo" onclick="window.open('https://wa.me/5561985462202', '_blank')" loading="lazy">
+    </div>
+  </section>
+
+  <footer>
+    <script>
+      function mostrarQuemSomos() {
+        alert('Viver com Saúde: atendimento humanizado com equipe médica e nutricional, focado em prevenção, qualidade de vida e bem-estar.');
+      }
+      function abrirLocalizacao() {
+        window.open('https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+123+Sua+Cidade', '_blank');
+      }
+      function atendimentoOnline() {
+        window.open('https://api.whatsapp.com/send?phone=5561985462202', '_blank');
+      }
+      function mostrarConvenios() {
+        alert('Convênios: Trabalhamos com diversos convênios médicos para facilitar seu atendimento.');
+      }
+    </script>
+    <p>&copy; 2026 Viver com Saúde. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
